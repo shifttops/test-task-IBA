@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Task IBA</title>
+</head>
+<body>
+<main class="_wrapper">
+    <section class="page">
+        <div class="page__body container">
+            <div class="table">
+                <div class="table__body">
+                    <div class="table__actions">
+                        <div class="table__actions__body">
+                            <div class="table__actions__search">
+                                <input id="search" placeholder="Search by name..." type="search">
+                                <button id="search-btn" class="table__actions__search__btn">Search</button>
+                            </div>
+                            <button class="table__actions__button__add" id="add" type="button"><img src="https://img.icons8.com/ios/50/000000/add--v1.png"/></button>
+                        </div>
+                    </div>
+                    <div class="table__content" id="table__content">
+                        <div class="table__content__column" id="name">
+                            <span class="table__content__column__h">Name</span>
+                        </div>
+                        <div class="table__content__column" id="description">
+                            <span class="table__content__column__h">Description</span>
+                        </div>
+                        <div class="table__content__column" id="date">
+                            <span class="table__content__column__h">Date</span>
+                        </div>
+                        <div class="table__content__column" id="actions">
+                            <span class="table__content__column__h">Actions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sort">
+                <form id="sort" class="sort__body">
+                    <div class="sort__title">
+                        Sort by:
+                    </div>
+                    <label class="sort__label" for="sortName">
+                        <input value="name" id="sortName" name="sort" type="radio">
+                        <span class="sort__text">Name</span>
+                    </label>
+                    <label class="sort__label" for="sortDescription">
+                        <input value="description" id="sortDescription" name="sort" type="radio">
+                        <span class="sort__text">Description</span>
+                    </label>
+                    <label class="sort__label" for="sortDate">
+                        <input value="date" id="sortDate" name="sort" type="radio">
+                        <span class="sort__text">Date</span>
+                    </label>
+                    <button id="sort-submit" class="sort__submit">Submit</button>
+                </form>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <form action="" class="popup__form">
+                            <label class="popup__form__label" for="form__name">
+                                <span class="popup__form__text">Name:</span>
+                                <input placeholder="Your name.."  class="popup__form__input" id="form__name" type="text">
+                            </label>
+                            <label class="popup__form__label" for="form__description">
+                                <span class="popup__form__text">Description:</span>
+                                <input placeholder="Tell something.."  class="popup__form__input" id="form__description" type="text">
+                            </label>
+                            <label class="popup__form__label" for="form__date">
+                                <span class="popup__form__text">Birthday:</span>
+                                <input placeholder="Your birthday.." class="popup__form__input" id="form__date" type="text">
+                            </label>
+                        </form>
+                        <button id="submit" class="popup__btn close-popup">Submit</button>
+                        <button id="close" class="popup__btn close-popup">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="index_bundle.js"></script>
+</body>
+</html>
